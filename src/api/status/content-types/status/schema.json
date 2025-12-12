@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statues",
+  "info": {
+    "singularName": "status",
+    "pluralName": "statues",
+    "displayName": "Status"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "trending",
+        "wishes",
+        "god",
+        "special"
+      ]
+    },
+    "language": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "en",
+        "hi",
+        "gu"
+      ]
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "#F0EBE3",
+      "regex": "^#([A-Fa-f0-9]{6})$"
+    }
+  }
+}
